@@ -1,1 +1,1 @@
-# school-scheduler
+# School Scheduler Starter Code
