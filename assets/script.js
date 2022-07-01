@@ -39,10 +39,10 @@ currentTime(9, hour9);
 currentTime(10, hour10);
 currentTime(11, hour11);
 currentTime(12, hour12);
-currentTime(1, hour1);
-currentTime(2, hour2);
-currentTime(3, hour3);
-currentTime(4, hour4);
-currentTime(5, hour5);
-currentTime(6, hour6);
+currentTime(13, hour1);
+currentTime(14, hour2);
+currentTime(15, hour3);
+currentTime(16, hour4);
+currentTime(17, hour5);
+currentTime(18, hour6);
 
