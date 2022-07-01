@@ -7,6 +7,7 @@ var time = moment().format("hh:mm:ss");
 $("#timeSlot").text(time);
 
 //get live time above???
+var submitButton = $("#btn");
 
 
 //functions below
@@ -46,3 +47,19 @@ currentTime(16, hour4);
 currentTime(17, hour5);
 currentTime(18, hour6);
 
+
+function renderScheduledItem(event) {
+var text = event.target.dataset.btn
+    if (text === "save9"){
+    var sumbitted = hour9.val();
+    localStorage.setItem("hour9", sumbitted)
+    }
+    console.log(text)
+    if (text === "save9"){
+        var sumbitted = hour9.val();
+        localStorage.setItem("hour9", sumbitted)
+        }
+}
+
+$("#btn").on("click", renderScheduledItem);
+   
