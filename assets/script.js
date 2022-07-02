@@ -6,10 +6,10 @@ $("#currentDay").text(today.format("MMMM Do, YYYY"));
 var time = moment().format("hh:mm:ss");
 $("#timeSlot").text(time);
 
-//get live time above???
 var submitButton = $("#btn");
 
 //functions below
+//created variables below that reference my html id's
 var hour9 = $("#hr9"); 
 var hour10 = $("#hr10"); 
 var hour11 = $("#hr11"); 
@@ -102,8 +102,8 @@ $("#btn7").on("click", renderScheduledItem);
 $("#btn8").on("click", renderScheduledItem);
 $("#btn9").on("click", renderScheduledItem);
 
-
-function init() {
+//created a function that allowed me to retrieve the variable from my local storage using (getItem)
+function storeMessage() {
 hour9.val(localStorage.getItem("hour9"));
 hour10.val(localStorage.getItem("hour10"));
 hour11.val(localStorage.getItem("hour11"));
@@ -114,9 +114,9 @@ hour15.val(localStorage.getItem("hour3"));
 hour16.val(localStorage.getItem("hour4"));
 hour17.val(localStorage.getItem("hour5"));
 hour18.val(localStorage.getItem("hour6"));
-
+//called my function
 }
-init();
+storeMessage();
 
 
    
