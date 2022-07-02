@@ -12,11 +12,17 @@ Challenges: I defiently struggled with trying to figure out how to get my text t
 You may use this page to access information about local storage, how to utilize different API's within your html, and to debug. 
 Feel free to reach out to me with ways I can simplify my code or better it!
 I have included an image reference to the page and a deployed link of the webpage below:
+------> https://alenambo02.github.io/school-scheduler/ <------
 
-![alt text](./assets/schedulerscreenshot.png)
+![alt text](./assets/screenshot.png)
 
 
 
+Also I included a code snippet of how to use moment.js to access the current day below:
+```
+var today = moment();
+$("#currentDay").text(today.format("MMMM Do, YYYY"));
+```
 ## License 
 MIT License
 
